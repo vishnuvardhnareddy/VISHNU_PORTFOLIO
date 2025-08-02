@@ -20,7 +20,7 @@ function Projects() {
                 </p>
                 <p>Date: July 2025</p>
                 <div className="project-links">
-                    <a href="#">
+                    <a href="https://github.com/vishnuvardhnareddy/DRIVE_lOCKER">
                         <img src={gitIcon} alt="GitHub" width="20" height="20" /> GitHub
                     </a>
                 </div>
@@ -52,7 +52,7 @@ function Projects() {
                 </p>
                 <p>Date: March 2025</p>
                 <div className="project-links">
-                    <a href="#">
+                    <a href="https://github.com/S-Gangadhar-tech/NewsPage">
                         <img src={gitIcon} alt="GitHub" width="20" height="20" /> GitHub
                     </a>
                 </div>

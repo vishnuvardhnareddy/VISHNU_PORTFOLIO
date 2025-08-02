@@ -25,7 +25,7 @@ function Home() {
                 <div style={{ display: 'flex', gap: '20px', fontSize: '24px', marginTop: '15px' }}>
                     {/* LinkedIn */}
                     <a
-                        href="https://www.linkedin.com/in/your-linkedin-id"
+                        href="https://www.linkedin.com/in/vishnu-vardhan-reddy-manda-755890282/overlay/about-this-profile/"
                         target="_blank"
                         rel="noopener noreferrer"
                         title="LinkedIn"
@@ -35,7 +35,7 @@ function Home() {
 
                     {/* GitHub */}
                     <a
-                        href="https://github.com/your-github-id"
+                        href="https://github.com/vishnuvardhnareddy"
                         target="_blank"
                         rel="noopener noreferrer"
                         title="GitHub"
