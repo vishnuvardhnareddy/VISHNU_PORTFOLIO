@@ -1,0 +1,93 @@
+/* Home.css */
+
+/* Base styling for the Home section */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90vh;
+    padding: 3rem 6vw;
+    background: #000000;
+    /* Very dark navy */
+    color: #fff;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+/* Left text block styling */
+.text {
+    max-width: 48%;
+}
+
+.text h1 {
+    font-size: 2.7rem;
+    /* Large bold main heading */
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -0.04em;
+}
+
+.text p {
+    font-size: 1.09rem;
+    color: #b1b8d2;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+/* Location row */
+.text>div[style*="alignItems: 'center'"] p {
+    color: #e1e9f1;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Social icons row */
+.text>div[style*="gap: '20px'"] a {
+    transition: transform 0.15s, opacity 0.15s;
+}
+
+.text>div[style*="gap: '20px'"] a:hover {
+    transform: translateY(-2px) scale(1.12);
+    opacity: 0.8;
+}
+
+/* Profile image section */
+.image {
+    position: relative;
+    width: 320px;
+    min-width: 260px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 12px 14px 0px 0px #717186, 0 8px 32px rgba(0, 0, 0, 0.16);
+    border: none;
+    background: #00000000;
+}
+
+/* Responsive adaptation */
+@media (max-width: 900px) {
+    .home {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 3vw;
+        min-height: unset;
+    }
+
+    .text {
+        max-width: 100%;
+    }
+
+    .image {
+        margin-top: 32px;
+        width: 200px;
+        min-width: 160px;
+    }
+}

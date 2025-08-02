@@ -1,0 +1,191 @@
+/* About.css */
+
+.aboutme {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 2rem 6rem;
+    background-color: #111827;
+    /* Same dark background as Home */
+    color: #e1e9f1;
+    /* Light text */
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 90vh;
+}
+
+.aboutme h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 1.8rem;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.abouttext {
+    max-width: 850px;
+    margin: 0 auto 3rem auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #cfd8fc;
+    text-align: justify;
+    padding: 0 1rem;
+}
+
+.abouttext p+p {
+    margin-top: 1.5rem;
+}
+
+/* Links for coding profiles - container */
+.tech-row {
+    display: flex;
+    justify-content: center;
+    gap: 2.8rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Link style for coding platforms */
+.tech-row a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e1e9f1;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+    width: 100px;
+}
+
+.tech-row a:hover,
+.tech-row a:focus {
+    color: #646cff;
+    transform: scale(1.1);
+    outline: none;
+}
+
+.tech-row a img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    margin-bottom: 0.6rem;
+    filter: drop-shadow(0 0 3px #646cff88);
+}
+
+/* Section: Skills */
+.skills {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.skills h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.skills p {
+    font-size: 1rem;
+    color: #a0a8d2;
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+
+/* Skill category headings */
+.skills h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #d1d9ff;
+    border-bottom: 2px solid #646cff;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 6px;
+}
+
+/* Skill tech rows */
+.skills .tech-row {
+    justify-content: flex-start;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+}
+
+/* Each skill item */
+.skills .tech-row>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+    cursor: default;
+    color: #e1e9f1;
+    transition: transform 0.3s;
+}
+
+.skills .tech-row>div:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 5px #646cffcc);
+}
+
+/* Skill images */
+.skills .tech-row>div img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    background: #222f43;
+    box-shadow: 0 2px 6px #1a2243cc;
+}
+
+/* Skill labels */
+.skills .tech-row>div p {
+    font-size: 0.9rem;
+    text-align: center;
+    user-select: none;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .abouttext {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .tech-row {
+        justify-content: center;
+        gap: 1.8rem;
+    }
+
+    .skills .tech-row>div {
+        width: 72px;
+    }
+
+    .skills .tech-row>div img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .skills h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .skills h1,
+    .aboutme h1 {
+        font-size: 2rem;
+    }
+
+    .skills p {
+        font-size: 0.9rem;
+    }
+
+    .skills h2 {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+}

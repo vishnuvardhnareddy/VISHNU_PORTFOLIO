@@ -1,0 +1,73 @@
+/* Contact.css */
+
+.contact {
+    max-width: 700px;
+    margin: 3rem auto 6rem;
+    padding: 2rem 1.5rem;
+    background-color: #111827;
+    /* consistent dark background */
+    color: #e1e9f1;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(100, 110, 255, 0.25);
+    min-height: 40vh;
+}
+
+.contact h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    margin-bottom: 1.4rem;
+    color: #cfd8fc;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.contact p a {
+    color: #646cff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact p a:hover,
+.contact p a:focus {
+    color: #a3a9ff;
+    outline: none;
+}
+
+/* Icons styling */
+.contact svg {
+    color: #646cff;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .contact {
+        padding: 1.5rem 1rem;
+    }
+
+    .contact h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+
+    .contact svg {
+        width: 20px;
+        height: 20px;
+    }
+}

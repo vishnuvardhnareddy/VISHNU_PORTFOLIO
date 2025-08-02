@@ -1,0 +1,143 @@
+/* Project.css */
+
+.projects {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 2rem 6rem;
+    background-color: #111827;
+    /* same dark background */
+    color: #e1e9f1;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 90vh;
+}
+
+.projects h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 2.4rem;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+/* Each project card */
+.project-item {
+    background: #1f2937;
+    /* slightly lighter dark block */
+    padding: 2rem 2.2rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(100, 110, 255, 0.3);
+    margin-bottom: 2.5rem;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item h2 {
+    font-size: 1.8rem;
+    color: #cfd8fc;
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+}
+
+.project-item p {
+    color: #a0a8d2;
+    font-size: 1.05rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* Links container: GitHub and Live Demo */
+.project-links {
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+    color: #e1e9f1;
+}
+
+.project-links a {
+    color: #646cff;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.25s ease;
+}
+
+.project-links a:hover,
+.project-links a:focus {
+    color: #a3a9ff;
+    outline: none;
+}
+
+/* Tech stack container */
+.tech-stack {
+    display: flex;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+}
+
+/* Each tech item */
+.tech-stack>div {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: default;
+    color: #e1e9f1;
+    transition: transform 0.3s ease;
+}
+
+.tech-stack>div:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 6px #646cffcc);
+}
+
+/* Tech stack image */
+.tech-stack img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #222f43;
+    box-shadow: 0 2px 6px #1a2243cc;
+}
+
+/* Tech label */
+.tech-stack span {
+    font-size: 1rem;
+    user-select: none;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-item p {
+        font-size: 0.95rem;
+    }
+
+    .tech-stack>div {
+        gap: 0.4rem;
+    }
+
+    .tech-stack img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .tech-stack span {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .projects h1 {
+        font-size: 2rem;
+    }
+
+    .project-item h2 {
+        font-size: 1.4rem;
+    }
+}

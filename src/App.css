@@ -1,0 +1,110 @@
+/* --- Global Reset and Base Styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: #000;
+  /* optional for dark theme */
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+/* Wrapper for all page content below fixed navbar */
+.page {
+  padding-top: 64px;
+  /* Match navbar height */
+}
+
+/* --- Navbar Styles --- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: #010101;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.10);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li {
+  display: inline-flex;
+}
+
+.nav-links a,
+.nav-links button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.07rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
+  color: #646cff;
+  border-bottom: 2px solid #646cff;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 32px;
+  top: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 850px) {
+  .navbar {
+    justify-content: start;
+    padding-left: 16px;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    width: 220px;
+    height: 100vh;
+    flex-direction: column;
+    background: #111827;
+    align-items: flex-start;
+    padding: 1.5rem 1rem;
+    box-shadow: -8px 0 16px #0002;
+    transform: translateX(110%);
+    gap: 2rem;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
